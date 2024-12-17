@@ -3,7 +3,7 @@
 FROM python:3.9-alpine
 
 #Copying my app to the image
-ENV APP_HOME=/app
+ENV APP_HOME app
 WORKDIR $APP_HOME
 COPY . ./
 
