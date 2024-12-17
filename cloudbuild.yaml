@@ -1,9 +1,11 @@
 steps:
  - name: 'gcr.io/cloud-builders/docker'
-   args: ['build', '-t', 'us-central1-docker.pkg.dec/de-ci-445005/docker-repo/my-app:$SHORT_SHA']
+   args: ['build', '-t', 'us-central1-docker.pkg.dev/de-ci-445005/docker-ci-demo-repo/my-app:$SHORT_SHA']
+
+   
 
  - name: 'gcr.io/cloud-builders/docker'
-   args: ['push', 'us-central1-docker.pkg.dec/de-ci-445005/docker-repo/my-app:$SHORT_SHA']
+   args: ['push', 'us-central1-docker.pkg.dev/de-ci-445005/docker-ci-demo-repo/my-app:$SHORT_SHA']
 
 images: 
- -  'us-central1-docker.pkg.dec/de-ci-445005/docker-repo/my-app:$SHORT_SHA'
+ -  'us-central1-docker.pkg.dev/de-ci-445005/docker-ci-demo-repo/my-app:$SHORT_SHA'
