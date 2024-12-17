@@ -1,1 +1,1 @@
-# -gcp-cloudbuild-artifactregistry
+# gcp-cloudbuild-artifactregistry
